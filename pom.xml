@@ -9,13 +9,16 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 <packaging>jar</packaging>
 <name>Getting Started with Maven</name>
 <url>http://apress.com</url>
-<developers>
-<developer>
-<id>balaji</id>
-<name>Balaji Varanasi</name>
-<email>balaji@inflinx.com</email>
-<properties>
-<active>true</active>
-</properties>
-</developer>
-
+<distributionManagement>
+<repository>
+<id>nexusReleases</id>
+<name>Releases</name>
+<url>http://54.186.181.21:8081/nexus/content/repositories/releases</url>
+</repository>
+<snapshotRepository>
+<id>nexusSnapshots</id>
+<name>Snapshots</name>
+<url>http://54.186.181.21:8081/nexus/content/repositories/snapshots</url>
+</snapshotRepository>
+</distributionManagement>
+</project>
